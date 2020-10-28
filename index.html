@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div id="hienthi"></div>
+
+<body>
+    <script>
+        var hienthi = document.getElementById("hienthi")
+        var sOut = "<table border=2>";
+            
+        for (var y = 1; y <= 10; y++) {
+            sOut += "<tr>";
+            for (var x = 1; x <= 10; x++) {
+                if(y==1){
+                    sOut += "<td>" + x + "</td>";
+                }
+                else{
+                    sOut += "<td>" + y*x + "</td>";
+                }
+            }
+            sOut += "</tr>";
+        }
+        sOut += "</table>";
+        hienthi.innerHTML = sOut
+    </script>
+</body>
+
+</html>
